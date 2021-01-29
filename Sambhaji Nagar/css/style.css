@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.main{
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+  url('/img/Kranti_Chowk_01.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: white;
+}
+/*  Header */
+.header{
+  overflow: hidden;
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  position: fixed;
+  z-index: 1;
+}
+.header ul{
+  float: right;
+  padding: auto;
+}
+.header ul li{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  display: inline-block;
+  padding:20px 20px;
+  font-size: 20px;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px 10px;
+}
+.header a:hover{
+  background-color: rgba(235, 18, 180, 0.73);
+  transition: .5s;
+  color:white;
+  border: 5px solid rgba(235, 18, 180, 0.73);
+}
+.header i{
+  display: none;
+}
+@media screen and (max-width:600px){
+  .header i{
+    padding: 15px 40px;
+    float: right;
+    display: block;
+  }
+  .header ul{
+    display: none;
+  }
+ 
+}
+/*  Main First Page */
+.Front{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Front img{
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width:600px){
+  .Front h1{
+    font-size: 50px;
+  } 
+}
+/* Location */
+#location{
+  margin: 5vh 0;
+  text-align:center;
+  height: 80vh;
+  padding:20px 50px;
+
+}
+.map {
+  margin: 30px;
+  border: 2px solid black;
+}
+@media screen and (max-width:600px){
+  #location{
+    height: 400px;
+    margin: 2vh 0;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .map{
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+/*  Album */
+.show-card{
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.show-card h1{
+  padding-top: 1rem;
+  font-size: 30px;
+}
+.button-for-mobile{
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content:space-evenly;
+}
+.button-for-mobile #previous img{
+  border-radius: 50%;
+}
+.button-for-mobile #previous img:hover{
+  height: 80px;
+  width: 80px;
+  box-shadow: 2px 2px 10px 5px  rgba(235, 18, 180, 0.73);
+  transition: .5s;
+}
+.button-for-mobile #next img{
+  border-radius: 50%;
+}
+.button-for-mobile #next img:hover{
+  height: 80px;
+  width: 80px;
+  box-shadow: 2px 2px 10px 5px  rgba(235, 18, 180, 0.73);
+  transition: .5s;
+}
+.card{
+  position: absolute;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 2px 2px 10px 10px  rgba(235, 18, 180, 0.73);
+}
+.card img{
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+.card #info{
+  align-items: center;
+  font-size: 20px;
+  padding-top:10px;
+}
+@media screen and (max-width:600px){
+  .card{
+    margin: 0px auto;
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    box-shadow: 2px 2px 10px 10px  rgba(235, 18, 180, 0.73);
+  }
+  .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .button-for-mobile{
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .button-for-mobile img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  .button-for-mobile #previous img:hover{
+    height: 45px;
+    width: 45px;
+    box-shadow: 2px 2px 10px 5px  rgba(235, 18, 180, 0.73);
+    transition: .5s;
+  }
+  .button-for-mobile #next img:hover{
+    height: 45px;
+    width: 45px;
+    box-shadow: 2px 2px 10px 5px  rgba(235, 18, 180, 0.73);
+    transition: .5s;
+  }
+
+}
+
+/* About Us*/
+#About-us{
+  position: relative;
+  height: 50vh;
+}
+
+.contact{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  text-align: center;
+}
+#name{
+  padding: 30px;
+  color: rgba(235, 18, 180, 0.73);
+}
+@media screen and (max-width:600px){
+  #About-us{
+    position: relative;
+    height: 70vh;
+    font-size: 15px;
+  }
+ 
+}
